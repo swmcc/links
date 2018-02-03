@@ -1,0 +1,11 @@
+#!/bin/sh
+
+title=$1
+address=$2
+
+timestamp() {
+  date +"%Y-%m-%d %T"
+}
+
+var=$(printf '%s - %s - %s' "$title" "$address" $(timestamp))
+echo $var

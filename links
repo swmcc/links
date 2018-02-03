@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [ -z "$1"]; then
+  cat /Users/swm/Dropbox/links.txt 
+else 
+  cat /Users/swm/Dropbox/links.txt | grep $1
+fi
